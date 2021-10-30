@@ -1,4 +1,4 @@
-package FinalOne;
+package HandsOn3;
 
 import java.util.Scanner;
 
