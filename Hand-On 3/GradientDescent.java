@@ -1,4 +1,4 @@
-package FinalOne;
+package HandsOn3;
 
 public class GradientDescent{
     private double beta0;
