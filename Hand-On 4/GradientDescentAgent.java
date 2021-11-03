@@ -45,7 +45,7 @@ public class GradientDescentAgent extends Agent {
             i++;
             
 //            if (i % 10000 == 0){
-//                System.out.println("Iteration n° " + i + "\nBeta0 = " + this.beta0 + " and Betha1 = " + this.beta1);
+//                System.out.println("Iteration n° " + i + "\nBeta0 = " + this.beta0 + " and Beta1 = " + this.beta1);
 //            }
 
             if (i >= maxIter) break;
