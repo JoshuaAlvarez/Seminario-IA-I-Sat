@@ -1,4 +1,4 @@
-package JadeAgent;
+package HandsOn7;
 
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
@@ -242,7 +242,7 @@ public interface State {
     private class Main extends OneShotBehaviour {
         
         public void action() {
-            //EquationSolver(x1, x2, x3, x4, x5, x6, r, limit) arguments are x = coefficients, r = equality, 
+        //EquationSolver(x1, x2, x3, x4, x5, x6, r, limit) arguments are x = coefficients, r = equality, 
         //limit = max value for the variables (0 -> limit-1)
         EquationSolver EqS = new EquationSolver(1,2,-3,1,4,1,30,11);
         //Arguments are GeneticAlgorithm(populationSize, crossoverRate, mutationRate)
