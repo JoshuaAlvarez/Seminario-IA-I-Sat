@@ -52,6 +52,7 @@ public class GradientDescentAgent extends Agent {
         } while (Math.abs(beta1) > tolerance || Math.abs(beta0) > tolerance);
 //        System.out.println(i + " iterations made.");
         System.out.println("Beta0 = " + this.beta0 + ".   Beta1 = " + this.beta1);
+	System.out.println("y = " + this.beta0 + "+ " + this.beta1 + "(x1)");    
     }
 
     // Calculate y = Beta0 + Beta1 * x
@@ -90,7 +91,7 @@ public class GradientDescentAgent extends Agent {
             //Parameters are beta0, beta1, dataset x axis and y axis
             GradientDescent gradientDescent = new GradientDescent(0, 0, x, y);
             gradientDescent.calculate();
-            System.out.println("Enter 'X' value to predict 'Y': ");
+            System.out.println("Enter 'x' value to predict Sales: ");
             Scanner input = new Scanner(System.in);
             double xValue = input.nextDouble();
             System.out.println(gradientDescent.hypothesisFunction(xValue));
