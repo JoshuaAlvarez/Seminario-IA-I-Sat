@@ -13,7 +13,7 @@ public class ParticleSwarmOptimization {
     private static int c1 = 2; //Acceleration factors
     private static int c2 = 2;
     private static double w = 0.9; //Inertia weight
-    private static List<Particle> swarm = new ArrayList<>(); //Particle swarm
+    private static List<Particle> swarm = new ArrayList<>(); //Create particle swarm
 
 //  Initialize population
     public static void initialParticles() {
