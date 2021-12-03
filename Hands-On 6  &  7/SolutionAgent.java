@@ -249,13 +249,16 @@ public interface State {
         GeneticAlghorithm GA = new GeneticAlghorithm(20,0.05,0.01);
         
         System.out.println("\nEquation is a + 2b - 3c + d + 4e + f = 30\n" );
-        
-        //Arguments are GA.solve(EqS, MaxIterations)
-        GA.solve(EqS,10000);
-        
-        System.out.println(GA.finalState.toString());
-        System.out.println("Final Fitness : " + EqS.getFitness(GA.finalState));
-
+        char c;
+        do{
+            //Arguments are GA.solve(EqS, MaxIterations)
+            GA.solve(EqS,10000);
+            System.out.println(GA.finalState.toString());
+            System.out.println("Final Fitness : " + EqS.getFitness(GA.finalState));
+            System.out.println("\nRecalculate? y/n\n" );
+            Scanner input = new Scanner(System.in);
+            c = input.next().charAt(0);   
+        }while(c == 'y');
         } 
 
         public int onEnd() {
