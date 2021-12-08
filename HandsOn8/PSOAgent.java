@@ -156,5 +156,5 @@ public class PSOAgent extends Agent {
       myAgent.doDelete();   
       return super.onEnd();
     } 
-  }    // END of inner class ...Behaviour
+  }    
 }
