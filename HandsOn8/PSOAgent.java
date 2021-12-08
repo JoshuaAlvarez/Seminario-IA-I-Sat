@@ -10,7 +10,7 @@ public class PSOAgent extends Agent {
 
   protected void setup() {
     System.out.println("Agent "+getLocalName()+" started.");
-    addBehaviour(new MyOneShotBehaviour());
+    addBehaviour(new PSOAction());
   }
   
   public class ParticleSwarmOptimization {
@@ -143,7 +143,7 @@ public class PSOAgent extends Agent {
 
 }
 
-  private class MyOneShotBehaviour extends OneShotBehaviour {
+  private class PSOAction extends OneShotBehaviour {
 
     public void action() {
         ParticleSwarmOptimization opt = new ParticleSwarmOptimization();
