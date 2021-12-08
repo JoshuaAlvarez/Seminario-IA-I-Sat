@@ -101,8 +101,8 @@ public class SolutionAgent extends Agent {
                 }
 
                 //Mutation
-                int number_of_mutations = (int) Math.floor(mutationRate * populationSize);
-                for (int i = 0; i < number_of_mutations; i++) {
+                int mutationsNumber = (int) Math.floor(mutationRate * populationSize);
+                for (int i = 0; i < mutationsNumber; i++) {
                     int mut_index = rnd.nextInt(populationSize);
                     newPopulation.add(gp.mutate(selectedPopulation.get(mut_index)));
                 }
