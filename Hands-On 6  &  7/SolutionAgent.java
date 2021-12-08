@@ -100,7 +100,6 @@ public class SolutionAgent extends Agent {
                     }
                 }
 
-                //Mutation
                 int mutationsNumber = (int) Math.floor(mutationRate * populationSize);
                 for (int i = 0; i < mutationsNumber; i++) {
                     int mut_index = rnd.nextInt(populationSize);
@@ -163,7 +162,7 @@ public class SolutionAgent extends Agent {
         EquationSolverState mes = (EquationSolverState)s;
         double val = (a*mes.cof[0] + b*mes.cof[1] + c*mes.cof[2] + d*mes.cof[3] + e*mes.cof[4] + f*mes.cof[5]);
 //        System.out.println("val = " + val);
-        return 100 - Math.abs(val - 30);
+        return 100 - Math.abs(val - r);
     }
 
     @Override
